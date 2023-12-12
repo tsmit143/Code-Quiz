@@ -25,11 +25,27 @@ var questions = [
         answer:"4.All the Above"
     },
 ]
+
 function nextQuestion(currentIndex){
+    var output = []; //store output
+    var answers = []; //store answer choices
+    var currentChoices = questions[currentIndex].choices;
     askQuestionEl.textContent = questions[currentIndex].question;
     //show all answers
+   // answerChoicesEl.textContent = questions[currentIndex].choices;
+   for (var i =0; i < currentChoices.length; i++){
+   var cbutton = document.createElement("button"); 
+   //create eventlisterns 
+   //creat everification function 
+   // that function needs to call func to display next ?
+   //set ids
+   }
     //store correct answer as data attribute
 };
+
+//function to answer question
+
+//replace previous question
 
 //timeLeft=timeLeft-10 (create function to do this)
 function countdown(){
